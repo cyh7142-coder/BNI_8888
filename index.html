@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳奕禈 | 現代陽宅風水堪輿師</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif TC', serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+        .gold-accent { color: #c9a84c; }
+        .gold-bg { background-color: #c9a84c; }
+        .gold-border { border-color: #c9a84c; }
+        .section-divider {
+            width: 48px; height: 3px; background-color: #c9a84c; margin: 0 auto 1.5rem;
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0; right: 0;
+            height: 2px; background: #c9a84c;
+            transform: scaleX(0);
+            transition: transform 0.2s ease;
+        }
+        .nav-link:hover::after { transform: scaleX(1); }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- 導覽列 -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-lg font-bold tracking-widest" style="font-family:'Noto Serif TC',serif; color:#1a1a2e;">陳奕禈</span>
+                    <span class="text-xs text-stone-400 tracking-wider hidden sm:block">陽宅風水堪輿師</span>
+                </div>
+                <div class="hidden md:flex items-baseline space-x-8 text-sm font-medium">
+                    <a href="#about" class="nav-link text-stone-600 hover:text-stone-900 transition py-1">關於我</a>
+                    <a href="#expertise" class="nav-link text-stone-600 hover:text-stone-900 transition py-1">核心服務</a>
+                    <a href="#experience" class="nav-link text-stone-600 hover:text-stone-900 transition py-1">經歷背景</a>
+                    <a href="#projects" class="nav-link text-stone-600 hover:text-stone-900 transition py-1">服務成果</a>
+                    <a href="#contact" class="gold-bg text-white px-4 py-2 rounded-lg hover:opacity-90 transition font-medium">預約諮詢</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-stone-600 hover:text-stone-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-stone-600 py-2 font-medium">關於我</a>
+            <a href="#expertise" class="block text-stone-600 py-2 font-medium">核心服務</a>
+            <a href="#experience" class="block text-stone-600 py-2 font-medium">經歷背景</a>
+            <a href="#projects" class="block text-stone-600 py-2 font-medium">服務成果</a>
+            <a href="#contact" class="block gold-bg text-white text-center py-2 rounded-lg font-medium">預約諮詢</a>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 -->
+    <header id="about" class="hero-bg py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold tracking-widest uppercase border gold-border text-yellow-300 rounded-sm">陽宅風水堪輿師 ｜ 8 年專業資歷</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
+                        用科學與邏輯，<br><span class="gold-accent">讀懂你家的風水密碼</span>
+                    </h1>
+                    <p class="text-base text-stone-300 max-w-xl mx-auto md:mx-0 leading-relaxed">
+                        深耕陽宅風水堪輿 8 年，以環境科學與邏輯取代迷信恐嚇。擅長在不破壞裝潢美學的前提下，協助首購族、換屋族與企業主，在購屋簽約前做好「風水健檢與防雷」，讓每一分錢都花在刀口上。
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
+                        <a href="#expertise" class="px-6 py-3 gold-bg text-white font-medium rounded-lg shadow hover:opacity-90 transition text-center">了解核心服務</a>
+                        <a href="#contact" class="px-6 py-3 bg-white/10 border border-white/30 text-white font-medium rounded-lg hover:bg-white/20 transition text-center">預約免費諮詢</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-yellow-700/40 bg-stone-700 flex items-center justify-center">
+                        <i class="fa-solid fa-user-tie text-7xl text-stone-400"></i>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-center">
+                            <p class="text-white font-bold text-lg" style="font-family:'Noto Serif TC',serif;">陳奕禈</p>
+                            <p class="text-yellow-300 text-xs tracking-wider">現代陽宅風水堪輿師</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 核心服務 -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-3">核心服務項目</h2>
+                <div class="section-divider"></div>
+                <p class="text-stone-500">不流於迷信、不破壞裝潢，以環境科學角度提供三大專業服務</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-stone-50 p-8 rounded-xl border border-stone-200 card-hover">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-house-circle-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3">購屋／租屋前期<br>風水健檢與防雷</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        協助客戶在簽約前進行現場堪驗，避開外煞與格局硬傷，省下未來龐大的化煞與裝潢成本，確保每一分錢花在刀口上。
+                    </p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-xl border border-stone-200 card-hover">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3">新居落成／裝潢前<br>風水規劃</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        配合室內設計圖面，在不動土木的前提下，預先規劃財位、文昌位與床位。結合現代設計美學，利用動線、色彩、光線與軟裝化解煞氣。
+                    </p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-xl border border-stone-200 card-hover">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3">現有住宅／商業空間<br>風水佈局</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        針對已入住或營業的空間，進行氣場調整、招財與化煞佈局。協助企業主提升業績、穩定員工流動率，並針對個人命格給予客製化建議。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 差異化亮點 -->
+            <div class="mt-16 bg-gradient-to-r from-stone-900 to-stone-800 rounded-2xl p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-white text-center mb-8">我與其他風水師有何不同？</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full gold-bg flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-flask text-white text-xs"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-1">科學與邏輯化解</p>
+                            <p class="text-stone-400 text-sm">以環境科學、氣場流動的角度解釋風水，讓年輕人與高階主管也能接受，不流於迷信恐嚇。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full gold-bg flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-palette text-white text-xs"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-1">不破壞裝潢美學</p>
+                            <p class="text-stone-400 text-sm">結合現代室內設計，不強迫購買昂貴且突兀的開運商品，透過軟裝與動線就能達到效果。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full gold-bg flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-user-check text-white text-xs"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white mb-1">客製化且透明</p>
+                            <p class="text-stone-400 text-sm">價格透明，針對客戶個人命格與現狀（求財、求子、求健康）給予專屬佈局建議。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 目標客群 -->
+    <section class="py-16 bg-amber-50 border-y border-amber-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold text-stone-900 mb-2">哪些人最需要我的服務？</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 border border-amber-100 card-hover">
+                    <div class="text-3xl mb-3">🏠</div>
+                    <h4 class="font-bold text-stone-900 mb-2">首購族 ／ 換屋族</h4>
+                    <p class="text-stone-600 text-sm">正在看房、準備買房，或剛交屋準備找設計師裝潢的家庭。時機最精準：<span class="font-medium text-amber-700">簽約前或出圖定案前</span>，就是最佳諮詢時機。</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-amber-100 card-hover">
+                    <div class="text-3xl mb-3">💼</div>
+                    <h4 class="font-bold text-stone-900 mb-2">創業家 ／ 企業主</h4>
+                    <p class="text-stone-600 text-sm">準備尋找新辦公室、擴店，或希望提升業績、穩定員工流動率的企業主。讓空間環境成為業績成長的助力。</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-amber-100 card-hover">
+                    <div class="text-3xl mb-3">🌙</div>
+                    <h4 class="font-bold text-stone-900 mb-2">運勢遇到瓶頸的人</h4>
+                    <p class="text-stone-600 text-sm">搬進新家後，家人健康頻頻出狀況，或財務、事業突然不順。透過空間的科學調整，找回生活的順流。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 職涯經歷 -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-3">經歷與背景</h2>
+                <div class="section-divider"></div>
+                <p class="text-stone-500">扎實的跨領域資歷，讓風水服務更有說服力與深度</p>
+            </div>
+            <div class="max-w-3xl mx-auto relative border-l-2 border-stone-200 ml-4 md:ml-auto">
+                <div class="mb-12 relative pl-6 md:pl-8">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 gold-bg rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-semibold gold-accent">現職 ／ 8 年以上</span>
+                    <h3 class="text-xl font-bold text-stone-900 mt-1">陽宅風水堪輿師</h3>
+                    <p class="text-sm font-medium text-stone-400">嘉義市東區 ／ 獨立執業</p>
+                    <p class="mt-2 text-stone-600 text-sm leading-relaxed">
+                        提供購屋前期風水健檢、新居裝潢佈局規劃、現有空間氣場調整等三大核心服務。結合現代電子地圖資訊與個人命理分析，協助客戶在購屋簽約前精準評估基地條件，成功為客戶避開格局硬傷。
+                    </p>
+                </div>
+                <div class="mb-12 relative pl-6 md:pl-8">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 gold-bg rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-semibold gold-accent">BNI 分會 ／ 現職</span>
+                    <h3 class="text-xl font-bold text-stone-900 mt-1">BNI 發言人 ／ 業務推薦網絡成員</h3>
+                    <p class="text-sm font-medium text-stone-400">嘉義 BNI 分會</p>
+                    <p class="mt-2 text-stone-600 text-sm leading-relaxed">
+                        活躍於 BNI 商業引薦網絡，與室內設計師、房屋仲介、代書（地政士）等相關行業建立深度合作關係。透過系統化人脈經營，每月穩定獲取住宅堪驗與企業辦公室選址引薦。
+                    </p>
+                </div>
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[11px] top-1.5 w-5 h-5 gold-bg rounded-full border-4 border-white"></div>
+                    <span class="text-sm font-semibold gold-accent">跨領域背景</span>
+                    <h3 class="text-xl font-bold text-stone-900 mt-1">傳產企業經歷 ／ 命理跨域鑽研</h3>
+                    <p class="text-sm font-medium text-stone-400">前傳產公司 ／ 自我精進</p>
+                    <p class="mt-2 text-stone-600 text-sm leading-relaxed">
+                        具備傳統產業實務背景，深刻理解企業主的經營思維。業餘熱衷於跨領域命理研究，除東方風水、八字外，亦鑽研現代占星，並與德國塗料進口商執行長、東方風水學術交流圈等保持深度交流。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務成果 -->
+    <section id="projects" class="py-20 bg-stone-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-stone-900 mb-3">精選服務成果</h2>
+                <div class="section-divider"></div>
+                <p class="text-stone-500">每一個案子背後，都是客戶省下的真實金錢與時間成本</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden border border-stone-200 card-hover flex flex-col">
+                    <div class="p-6 md:p-8 flex-1">
+                        <span class="text-xs font-semibold uppercase tracking-wider gold-accent">購屋前期堪驗案例</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-2 mb-3">協助「有德東家」避開格局硬傷</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            在客戶簽約前進行精準風水堪驗，成功識別物件的格局缺陷與外煞問題，協助客戶做出正確決策，省下未來可能耗費的龐大化煞與裝潢成本，避免買錯房的財務損失。
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 md:px-8 md:pb-8">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-amber-50 text-amber-700 text-xs rounded border border-amber-200">現場堪驗</span>
+                            <span class="px-2 py-1 bg-amber-50 text-amber-700 text-xs rounded border border-amber-200">格局評估</span>
+                            <span class="px-2 py-1 bg-amber-50 text-amber-700 text-xs rounded border border-amber-200">外煞判定</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-stone-200 card-hover flex flex-col">
+                    <div class="p-6 md:p-8 flex-1">
+                        <span class="text-xs font-semibold uppercase tracking-wider gold-accent">BNI 跨業合作成果</span>
+                        <h3 class="text-xl font-bold text-stone-900 mt-2 mb-3">建立「室內設計 × 風水」黃金合作鏈</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            與 BNI 分會夥伴建立系統化引薦機制，在室內設計師出圖定案前介入風水規劃，讓設計圖同時兼顧美感與氣場佈局。透過互相引薦，實現多方業主與合作夥伴的共贏局面。
+                        </p>
+                    </div>
+                    <div class="px-6 pb-6 md:px-8 md:pb-8">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-amber-50 text-amber-700 text-xs rounded border border-amber-200">跨業合作</span>
+                            <span class="px-2 py-1 bg-amber-50 text-amber-700 text-xs rounded border border-amber-200">裝潢前規劃</span>
+                            <span class="px-2 py-1 bg-amber-50 text-amber-700 text-xs rounded border border-amber-200">引薦網絡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 好的引薦 vs 不合適引薦 -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                    <h4 class="font-bold text-green-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-circle-check"></i> 最佳引薦時機</h4>
+                    <ul class="space-y-2 text-sm text-green-700">
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>準備購屋但還沒簽約，需要風水評估</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>準備裝潢但還沒出圖定案</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>搬進新家後健康下滑、家人爭吵或業績停滯</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>企業主準備尋找新辦公室或擴店</span></li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                    <h4 class="font-bold text-red-800 mb-4 flex items-center gap-2"><i class="fa-solid fa-circle-xmark"></i> 不合適的情況</h4>
+                    <ul class="space-y-2 text-sm text-red-700">
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>房子已裝潢死、預算見底，完全不願調整格局</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>只想免費問一下、測一下，沒有實際需求</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>期望一次風水調整就能一夜暴富的客戶</span></li>
+                        <li class="flex items-start gap-2"><span class="mt-1">•</span><span>帶著踢館心態，完全不相信風水的人</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡區 -->
+    <section id="contact" class="hero-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold tracking-tight">預約堪驗諮詢</h2>
+                    <p class="text-stone-300 max-w-sm">
+                        無論是購屋前期風水健檢、裝潢前佈局規劃，還是辦公室選址評估，歡迎與我聯繫，讓每一個決定都更有把握。
+                    </p>
+                    <div class="space-y-4 pt-4 text-stone-300">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-location-dot gold-accent"></i>
+                            <span>嘉義市東區台林街 132 之 22 號</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-map-pin gold-accent"></i>
+                            <span>服務範圍：嘉義、台南及周邊地區 ／ 線上諮詢亦可</span>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-white/10">
+                        <p class="text-xs text-stone-400 mb-3">當你聽到朋友說這些話，可以幫我引薦：</p>
+                        <div class="space-y-2 text-sm text-stone-300">
+                            <p class="italic">「我們最近週末都在到處看房子，好累喔。」</p>
+                            <p class="italic">「這間房子格局看起來怪怪的，不知道風水好不好？」</p>
+                            <p class="italic">「自從上個月搬進新家之後，我小孩一直生病。」</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('感謝您的聯繫！我會盡快回覆您。');">
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">您的姓名</label>
+                            <input type="text" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm text-white placeholder-stone-400 focus:outline-none focus:border-yellow-400" placeholder="例如：王先生／林小姐">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">聯絡電話或 Email</label>
+                            <input type="text" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm text-white placeholder-stone-400 focus:outline-none focus:border-yellow-400" placeholder="方便聯絡的方式">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">諮詢需求</label>
+                            <select class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-yellow-400">
+                                <option value="" class="text-stone-800">請選擇服務類型</option>
+                                <option value="1" class="text-stone-800">購屋／租屋前期風水健檢</option>
+                                <option value="2" class="text-stone-800">新居裝潢前風水規劃</option>
+                                <option value="3" class="text-stone-800">現有空間風水佈局調整</option>
+                                <option value="4" class="text-stone-800">辦公室選址評估</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">補充說明</label>
+                            <textarea rows="3" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm text-white placeholder-stone-400 focus:outline-none focus:border-yellow-400" placeholder="簡短描述您目前的狀況或需求..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full gold-bg hover:opacity-90 transition text-white font-medium py-2.5 rounded-lg text-sm">送出預約請求</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-stone-950 text-stone-500 text-center py-6 text-xs border-t border-stone-900">
+        <p>© 2026 陳奕禈 陽宅風水堪輿師｜嘉義市東區 ／ 用科學與邏輯，讀懂你家的風水密碼</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+    </script>
+</body>
+</html>
